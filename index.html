@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codificador</title>
 </head>
+
 <body>
     <header>
         <img src="img/A.png" alt="Logo do Projeto, letra a">
     </header>
     <main>
-        <input type="text" placeholder="Mensagem enviada">
+        <input type="text" id="entradaMensagem" placeholder="Digite seu texto">
 
         <div>
+            <p>
+                <img src="img/Vector.png" alt="sinal de exclamação">
+                Apenas letras minúsculas e sem acento.
+            </p>
             <button>Criptografar</button>
             <button>Descriptografar</button>
         </div>
+
         <div>
-            <input type="text" placeholder="Mensagem recebida">
+            <input type="text" id="saidaMensagem" placeholder="Mensagem recebida">
             <img src="img/High quality products 1 1.svg" alt="Imagem de um menino olhando com uma Lupa">
+            <p>Nenhuma mensagem encontrada</p>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
+
 </html>
