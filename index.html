@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Codificador</title>
 </head>
 
@@ -13,23 +14,25 @@
         <img src="img/A.png" alt="Logo do Projeto, letra a">
     </header>
     <main>
-        <input type="text" id="entradaMensagem" placeholder="Digite seu texto">
+        <section>
+            <div class="container__criptografado__PCRJ">
+                <input type="text" id="saidaMensagem" placeholder="Mensagem recebida">
+                <img src="img/High quality products 1 1.svg" alt="Imagem de um menino olhando com uma Lupa">
+                <p>Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="btn__PCRJ">
+                <textarea type="text" id="entradaMensagem" placeholder="Digite seu texto" class="recebeMsg__PCRJ"></textarea>
+                <p class="paragrafo__PCRJ">
+                    <img src="img/Vector.png" alt="sinal de exclamação">
+                    Apenas letras minúsculas e sem acento.
+                </p>
 
-        <div>
-            <p>
-                <img src="img/Vector.png" alt="sinal de exclamação">
-                Apenas letras minúsculas e sem acento.
-            </p>
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
-        </div>
+                <button id="btn-criptografar-PCRJ" class="btn__criptografar__PCRJ">Criptografar</button>
+                <button id="btn-descriptografar-PCRJ" class="btn__descriptografar__PCRJ">Descriptografar</button>
+            </div>
+        </section>
 
-        <div>
-            <input type="text" id="saidaMensagem" placeholder="Mensagem recebida">
-            <img src="img/High quality products 1 1.svg" alt="Imagem de um menino olhando com uma Lupa">
-            <p>Nenhuma mensagem encontrada</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-        </div>
     </main>
     <script src="index.js"></script>
 </body>
