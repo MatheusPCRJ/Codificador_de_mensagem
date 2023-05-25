@@ -6,29 +6,51 @@
 header {
     margin: 1rem 0 1rem 5rem;
 }
+body {
+    background: #F3F5FC;
+}
 main {
-    width: 940px;
+    width: 1200px;
     margin: 2rem auto 0;
     /* border: 1px solid #000000; */
 }
 section {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
 }
 .container__criptografado__PCRJ {
     /* border: 1px solid #000000; */
-    width: 40%;
-}
-.btn__PCRJ {
     text-align: center;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px;
+    width: 400px;
+    background: #ffffff;
+    border-radius: 32px;
+}
+.container__paragrafos_PCRJ {
+    width: 336px;
+}
+.paragrafo__msg__PCRJ {
+    font-size: 25px;
+    font-weight: 700;
+    color: #343A40;
+    margin-bottom: 16px;
+}
+.paragrafo__digite_PCRJ {
+    font-size: 19px;
+    font-weight: 400;
+    color: #495057;
 }
 .recebeMsg__PCRJ {
-    width: 400px;
-    height: 350px;
+    width: 680px;
+    height: 288px;
     border: none;
     font-size: 32px;
     color: #0A3871;
+    margin-bottom: 395px;
+    background: #F3F5FC;
 }
 textarea[type="text"]::placeholder {
     color: #0A3871;
@@ -40,9 +62,13 @@ textarea[type="text"]::placeholder {
 }
 .btn__criptografar__PCRJ, .btn__descriptografar__PCRJ {
     font-size: 16px;
-    color: #ffffff;
-    background: #0A3871;
     padding: 24px;
     border-radius: 24px;
     width: 328px;
+    color: #ffffff;
+    background: #0A3871;
+}
+.btn__descriptografar__PCRJ {
+    background: #D8DFE8;
+    color: #0A3871;
 }
