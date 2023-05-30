@@ -29,6 +29,13 @@ section {
     background: #ffffff;
     border-radius: 32px;
 }
+.saidaMsg__PCRJ {
+    font-size: 25px;
+    width: 90%;
+    margin: 3rem 20px 0 20px;
+    height: 400px;
+    border: none;
+}
 .container__paragrafos_PCRJ {
     width: 336px;
 }
@@ -39,11 +46,12 @@ section {
     margin-bottom: 16px;
 }
 .paragrafo__digite_PCRJ {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 400;
+    padding: 0px 26px;
     color: #495057;
 }
-.recebeMsg__PCRJ {
+.recebeMsg__PCRJ{
     width: 680px;
     height: 288px;
     border: none;
@@ -71,4 +79,13 @@ textarea[type="text"]::placeholder {
 .btn__descriptografar__PCRJ {
     background: #D8DFE8;
     color: #0A3871;
+}
+.btn__copiar__PCRJ {
+    font-size: 16px;
+    padding: 24px;
+    border-radius: 24px;
+    width: 328px;
+    color: #ffffff;
+    background: #6280a5;
+    margin-top: 2rem;
 }

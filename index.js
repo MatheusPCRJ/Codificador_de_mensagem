@@ -1,27 +1,43 @@
 let entrada = document.querySelector('#entradaMensagem');
-let saida = document.querySelector('#saidaMensagem')
-let criptografar = document.querySelector('#btn-criptografar-PCRJ')
-let descriptografar = document.querySelector('#btn-descriptografar-PCRJ')
-let letraA = "a"
-let letraE = "e"
-let letraI = "i"
-let letraO = "o"
-let letraU = "u"
-
-
-let consoantes = ["a", "e", "i", "o", "u"];
+let saida = document.querySelector('#saidaMensagem');
+let criptografar = document.querySelector('#btn-criptografar-PCRJ');
+let descriptografar = document.querySelector('#btn-descriptografar-PCRJ');
+let btnCopiar = document.querySelector('#btn__copiar__PCRJ');
+let sumirDiv = document.querySelector('#sumirDiv__PCRJ');
+saida.style.display = "none";
 
 function codifica() {
-  for (let i = 0; i <= consoantes.length; i++) {
-    let entradaDosValores = entrada.value[i];
-    if(entradaDosValores == consoantes[i]) {
-      let substituindo = entradaDosValores.replaceAll("a", "1");
-      
-      saida.value = substituindo
-    }
-  }
-  
+  let mensagem = entrada.value;
+
+  let entradaDosValores = mensagem.replace(/a/i, "ai");
+  entradaDosValores = entradaDosValores.replace(/e/i, "enter");
+  entradaDosValores = entradaDosValores.replace(/i/i, "imes");
+  entradaDosValores = entradaDosValores.replace(/o/i, "ober");
+  entradaDosValores = entradaDosValores.replace(/u/i, "ufat");
+
+  sumirDiv.style.display = "none";
+  saida.style.display = "block";
+
+  return saida.value = saida.innerHTML = entradaDosValores;
+};
+
+function decodifica() {
+  let mensagem = entrada.value;
+
+  let entradaDosValores = mensagem.replace(/ai/i, "a");
+  entradaDosValores = entradaDosValores.replace(/enter/i, "e");
+  entradaDosValores = entradaDosValores.replace(/imes/i, "i");
+  entradaDosValores = entradaDosValores.replace(/ober/i, "o");
+  entradaDosValores = entradaDosValores.replace(/ufat/i, "u");
+
+  return saida.value = saida.innerHTML = entradaDosValores;
+};
+
+function copiar() {
+  saida.select();
+  navigator.clipboard.writeText(saida.value);
 }
 
-
 criptografar.onclick = codifica;
+descriptografar.onclick = decodifica;
+btnCopiar.onclick = copiar;
