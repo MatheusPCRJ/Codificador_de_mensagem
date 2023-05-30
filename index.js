@@ -9,9 +9,9 @@ saida.style.display = "none";
 function codifica() {
   let mensagem = entrada.value;
 
-  let entradaDosValores = mensagem.replace(/a/i, "ai");
-  entradaDosValores = entradaDosValores.replace(/e/i, "enter");
+  entradaDosValores = mensagem.replace(/e/i, "enter");
   entradaDosValores = entradaDosValores.replace(/i/i, "imes");
+  entradaDosValores = entradaDosValores.replace(/a/i, "ai");
   entradaDosValores = entradaDosValores.replace(/o/i, "ober");
   entradaDosValores = entradaDosValores.replace(/u/i, "ufat");
 
@@ -24,9 +24,9 @@ function codifica() {
 function decodifica() {
   let mensagem = entrada.value;
 
-  let entradaDosValores = mensagem.replace(/ai/i, "a");
-  entradaDosValores = entradaDosValores.replace(/enter/i, "e");
+  entradaDosValores = mensagem.replace(/enter/i, "e");
   entradaDosValores = entradaDosValores.replace(/imes/i, "i");
+  entradaDosValores = entradaDosValores.replace(/ai/i, "a");
   entradaDosValores = entradaDosValores.replace(/ober/i, "o");
   entradaDosValores = entradaDosValores.replace(/ufat/i, "u");
 
